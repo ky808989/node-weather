@@ -4,7 +4,7 @@ var formData = document.querySelector('form'), search = document.querySelector('
 
 formData.addEventListener('submit', (event) => {
     event.preventDefault()
-    var location = 'http://localhost:3000/weather/?search=' + search.value
+    var location = '/weather/?search=' + search.value
     msg1.textContent = 'Loading...'
 
     fetch(location).then((res) => {

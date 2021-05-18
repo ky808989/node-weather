@@ -3,6 +3,7 @@ const path = require('path')
 const hbs = require('hbs')
 const geocode = require('../goecode.js')
 const weather = require('../weather.js')
+const port = process.env.PORT || 3000
 
 const app = express()
 console.log(__dirname)
@@ -84,6 +85,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('App started.')
 })
