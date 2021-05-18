@@ -1,6 +1,7 @@
 console.log('script loaded. Just joking.')
 
-var formData = document.querySelector('form'), search = document.querySelector('input'), msg1 = document.querySelector('#msg1')
+var formData = document.querySelector('form'), search = document.querySelector('input')
+var msg1 = document.querySelector('#msg1')
 
 formData.addEventListener('submit', (event) => {
     event.preventDefault()
@@ -15,9 +16,9 @@ formData.addEventListener('submit', (event) => {
             } else {
                 console.log(data.contentInfo)
                 if (data.contentInfo.weather) {
-                    msg1.textContent = data.contentInfo.name + ',' +
-                        data.contentInfo.weather + ',' +
-                        data.contentInfo.temp
+                    msg1.textContent = data.contentInfo.name + ' is currently ' +
+                        data.contentInfo.weather + ' with a temperature of ' +
+                        data.contentInfo.temp + '\xb0C'
                 } else {
                     msg1.textContent = data.contentInfo.name
                 }

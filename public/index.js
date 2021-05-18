@@ -16,7 +16,7 @@ app.use(express.static(__dirname))
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'About this app',
+        title: 'Weather App',
         name: 'Peter',
         content: 'Enter a location below to search it\'s current weather.'
     })
@@ -57,7 +57,7 @@ app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About this app',
         name: 'Peter',
-        content: 'There is no content at this moment'
+        content: 'This app is created by Peter. It uses Mapbox and Weatherstack for the geolocation and weather informations.'
     })
 })
 
@@ -65,7 +65,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
         name: 'Peter',
-        content: 'none'
+        content: 'You can search weather for a location at Home page(index), and some info for this app at About page.'
     })
 })
 
