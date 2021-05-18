@@ -16,5 +16,14 @@
     "request": "^2.88.2",
     "yargs": "^16.2.0"
   },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ky808989/node-weather.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ky808989/node-weather/issues"
+  },
+  "homepage": "https://github.com/ky808989/node-weather#readme",
   "description": ""
 }
